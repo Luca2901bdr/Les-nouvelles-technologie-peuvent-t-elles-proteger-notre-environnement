@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sondages & QCM - Les nouvelles technologies</title>
+    <title>Sondage - Les nouvelles technologies</title>
 
+    <!-- Lien vers le fichier CSS à la racine -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -19,88 +20,127 @@
             <a href="debat.html">LE DÉBAT</a>
             <a href="veille.html">VEILLE TECHNOLOGIQUE</a>
             <a href="solutions.html">SOLUTIONS</a>
-            <a href="sondages.html" class="active">SONDAGES</a>
+            <a href="sondages.html" class="active">SONDAGE</a>
         </nav>
     </header>
 
     <div class="container">
 
+        <!-- Introduction -->
         <section class="sondages-intro">
             <h2>📊 À vous de jouer !</h2>
-            <p>Ce site a été conçu pour sensibiliser et faire réfléchir. Pour conclure mon projet SHES, je vous propose 3 rapides QCM pour tester vos connaissances acquises lors de votre lecture, analyser vos habitudes, et enfin, récolter votre opinion personnelle.</p>
+            <p>Ce site a été conçu pour sensibiliser et faire réfléchir. Pour conclure ma démarche, je vous propose un questionnaire unique de 10 questions. Le but ? Tester vos connaissances acquises sur ce site, évaluer vos comportements numériques et récolter votre avis sur notre futur technologique.</p>
         </section>
 
+        <!-- Le formulaire global -->
         <form action="#" method="get">
 
-            <section class="qcm-section">
-                <h3>QCM 1 : Test de Connaissances 🧠</h3>
-                <p class="qcm-desc">Avez-vous bien retenu les chiffres clés exposés dans la veille technologique et le débat ?</p>
+            <!-- ============================================== -->
+            <!-- QCM UNIQUE : 10 Questions mixtes               -->
+            <!-- ============================================== -->
+            <details class="qcm-details" open>
+                <summary>QCM Bilan : Testez votre profil numérique 🌍</summary>
+                
+                <div class="qcm-content">
+                    <p class="qcm-desc">Répondez honnêtement à ces 10 questions pour faire le point sur votre impact et votre vision de l'innovation.</p>
 
-                <div class="question-bloc">
-                    <div class="question-text">1. Quelle part de l'électricité mondiale est consommée par le secteur du numérique selon l'ADEME ?</div>
-                    <div class="options-group">
-                        <label class="option-label"><input type="radio" name="connaissance_q1" value="a"> A. Environ 2 %</label>
-                        <label class="option-label"><input type="radio" name="connaissance_q1" value="b"> B. Environ 5 %</label>
-                        <label class="option-label"><input type="radio" name="connaissance_q1" value="c"> C. Environ 10 %</label>
+                    <!-- PARTIE 1 : CONNAISSANCES -->
+                    <div class="question-bloc">
+                        <div class="question-text">1. (Connaissance) Quelle part de l'électricité mondiale est consommée par le secteur du numérique selon l'ADEME ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q1" value="a"> A. Environ 2 %</label>
+                            <label class="option-label"><input type="radio" name="q1" value="b"> B. Environ 5 %</label>
+                            <label class="option-label"><input type="radio" name="q1" value="c"> C. Environ 10 %</label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question-bloc">
-                    <div class="question-text">2. Combien d'eau faut-il pomper pour extraire une seule tonne de lithium ?</div>
-                    <div class="options-group">
-                        <label class="option-label"><input type="radio" name="connaissance_q2" value="a"> A. 20 000 litres</label>
-                        <label class="option-label"><input type="radio" name="connaissance_q2" value="b"> B. 200 000 litres</label>
-                        <label class="option-label"><input type="radio" name="connaissance_q2" value="c"> C. 2 millions de litres</label>
+                    <div class="question-bloc">
+                        <div class="question-text">2. (Connaissance) Combien d'eau faut-il pomper pour extraire une seule tonne de lithium (selon l'ONU) ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q2" value="a"> A. 20 000 litres</label>
+                            <label class="option-label"><input type="radio" name="q2" value="b"> B. 200 000 litres</label>
+                            <label class="option-label"><input type="radio" name="q2" value="c"> C. 2 millions de litres</label>
+                        </div>
                     </div>
-                </div>
-            </section>
 
-            <section class="qcm-section">
-                <h3>QCM 2 : Vos Comportements 📱</h3>
-                <p class="qcm-desc">Faisons le point sur vos habitudes quotidiennes concernant le numérique.</p>
-
-                <div class="question-bloc">
-                    <div class="question-text">1. En moyenne, à quelle fréquence changez-vous de smartphone (même s'il fonctionne encore) ?</div>
-                    <div class="options-group">
-                        <label class="option-label"><input type="radio" name="comportement_q1" value="a"> A. Tous les ans (ou presque)</label>
-                        <label class="option-label"><input type="radio" name="comportement_q1" value="b"> B. Tous les 2 à 3 ans</label>
-                        <label class="option-label"><input type="radio" name="comportement_q1" value="c"> C. Je le garde jusqu'à ce qu'il soit irréparable</label>
+                    <div class="question-bloc">
+                        <div class="question-text">3. (Connaissance) Sur l'ensemble de la vie d'un smartphone, quelle étape pollue le plus l'environnement ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q3" value="a"> A. Son rechargement quotidien à la maison.</label>
+                            <label class="option-label"><input type="radio" name="q3" value="b"> B. Sa fabrication (extraction des minerais, usines, transport).</label>
+                            <label class="option-label"><input type="radio" name="q3" value="c"> C. Le stockage des photos dans le Cloud.</label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question-bloc">
-                    <div class="question-text">2. Avez-vous déjà acheté un appareil électronique reconditionné ?</div>
-                    <div class="options-group">
-                        <label class="option-label"><input type="radio" name="comportement_q2" value="a"> A. Oui, c'est mon premier réflexe</label>
-                        <label class="option-label"><input type="radio" name="comportement_q2" value="b"> B. Non, mais j'y songe pour l'avenir</label>
-                        <label class="option-label"><input type="radio" name="comportement_q2" value="c"> C. Non, je n'ai pas confiance, je préfère le neuf</label>
+                    <div class="question-bloc">
+                        <div class="question-text">4. (Connaissance) Actuellement, quel est le pourcentage mondial de déchets électroniques (DEEE) qui sont correctement recyclés ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q4" value="a"> A. Seulement 20 %</label>
+                            <label class="option-label"><input type="radio" name="q4" value="b"> B. Environ 50 %</label>
+                            <label class="option-label"><input type="radio" name="q4" value="c"> C. Plus de 80 %</label>
+                        </div>
                     </div>
-                </div>
-            </section>
 
-            <section class="qcm-section">
-                <h3>QCM 3 : Votre Avis Personnel ⚖️</h3>
-                <p class="qcm-desc">Au vu de ce projet, quel est votre ressenti général ? (Il n'y a pas de mauvaise réponse).</p>
-
-                <div class="question-bloc">
-                    <div class="question-text">1. Pensez-vous que l'Intelligence Artificielle va nous aider à résoudre la crise climatique ?</div>
-                    <div class="options-group">
-                        <label class="option-label"><input type="radio" name="avis_q1" value="a"> A. Oui, sa capacité d'optimisation est notre meilleur espoir.</label>
-                        <label class="option-label"><input type="radio" name="avis_q1" value="b"> B. Peut-être, mais son propre coût énergétique risque d'annuler ses bénéfices.</label>
-                        <label class="option-label"><input type="radio" name="avis_q1" value="c"> C. Non, l'IA accélère la surexploitation de nos ressources.</label>
+                    <!-- PARTIE 2 : COMPORTEMENTS -->
+                    <div class="question-bloc">
+                        <div class="question-text">5. (Comportement) Quelle est la meilleure habitude à adopter pour regarder une vidéo ou une série sur son téléphone ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q5" value="a"> A. La regarder en streaming 4K via le réseau 4G/5G.</label>
+                            <label class="option-label"><input type="radio" name="q5" value="b"> B. Télécharger l'épisode à l'avance via le Wi-Fi, puis le regarder hors-ligne.</label>
+                            <label class="option-label"><input type="radio" name="q5" value="c"> C. Laisser la lecture automatique enchaîner les épisodes toute la nuit.</label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question-bloc">
-                    <div class="question-text">2. Selon vous, quelle est la priorité absolue pour les années à venir ?</div>
-                    <div class="options-group">
-                        <label class="option-label"><input type="radio" name="avis_q2" value="a"> A. Freiner l'innovation (Low-Tech) et changer nos modes de vie.</label>
-                        <label class="option-label"><input type="radio" name="avis_q2" value="b"> B. Éduquer les ingénieurs à l'éco-conception pour rendre le numérique propre.</label>
-                        <label class="option-label"><input type="radio" name="avis_q2" value="c"> C. Continuer d'innover massivement pour trouver de nouvelles énergies (High-Tech).</label>
+                    <div class="question-bloc">
+                        <div class="question-text">6. (Comportement) Que devriez-vous faire de votre ancien ordinateur ou téléphone s'il commence à ramer ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q6" value="a"> A. Le garder dans un tiroir "au cas où" et en racheter un neuf.</label>
+                            <label class="option-label"><input type="radio" name="q6" value="b"> B. Le jeter avec les ordures ménagères pour faire de la place.</label>
+                            <label class="option-label"><input type="radio" name="q6" value="c"> C. Tenter de le réparer, ou le déposer en point de collecte certifié.</label>
+                        </div>
                     </div>
-                </div>
-            </section>
 
+                    <div class="question-bloc">
+                        <div class="question-text">7. (Comportement) Comment pouvez-vous réduire facilement l'impact écologique de vos données stockées dans le "Cloud" ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q7" value="a"> A. En supprimant régulièrement les e-mails inutiles et en triant le stockage en ligne.</label>
+                            <label class="option-label"><input type="radio" name="q7" value="b"> B. En créant plusieurs adresses e-mail pour répartir le poids des messages.</label>
+                            <label class="option-label"><input type="radio" name="q7" value="c"> C. Il n'y a rien à faire, le Cloud ne consomme pas d'énergie physique.</label>
+                        </div>
+                    </div>
+
+                    <!-- PARTIE 3 : AVIS SUR LE FUTUR -->
+                    <div class="question-bloc">
+                        <div class="question-text">8. (Avis) Face à la crise climatique, pensez-vous que l'Intelligence Artificielle sera...</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q8" value="a"> A. Notre meilleure alliée pour optimiser nos ressources (agriculture, énergie).</label>
+                            <label class="option-label"><input type="radio" name="q8" value="b"> B. Un outil utile, mais dangereux car il consomme lui-même énormément d'électricité.</label>
+                            <label class="option-label"><input type="radio" name="q8" value="c"> C. Un accélérateur de la crise en poussant à la surconsommation.</label>
+                        </div>
+                    </div>
+
+                    <div class="question-bloc">
+                        <div class="question-text">9. (Avis) Selon vous, quelle devrait être la priorité absolue pour les futurs ingénieurs ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q9" value="a"> A. Développer toujours plus de High-Tech pour trouver des solutions miracles.</label>
+                            <label class="option-label"><input type="radio" name="q9" value="b"> B. Se former à l'éco-conception logicielle et promouvoir la "Low-Tech".</label>
+                            <label class="option-label"><input type="radio" name="q9" value="c"> C. Freiner totalement l'innovation et revenir à des méthodes de travail d'il y a 50 ans.</label>
+                        </div>
+                    </div>
+
+                    <div class="question-bloc">
+                        <div class="question-text">10. (Avis) Au final, après avoir lu ce site, êtes-vous optimiste quant à notre capacité à équilibrer technologie et écologie ?</div>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="q10" value="a"> A. Oui, la science et les nouvelles générations d'ingénieurs trouveront les solutions.</label>
+                            <label class="option-label"><input type="radio" name="q10" value="b"> B. J'espère, mais cela demandera de lourds sacrifices dans notre confort quotidien.</label>
+                            <label class="option-label"><input type="radio" name="q10" value="c"> C. Non, le système économique actuel rend ce changement impossible.</label>
+                        </div>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- Bouton d'envoi final -->
             <div class="submit-bloc">
                 <button type="submit" class="btn">Envoyer mes réponses</button>
             </div>
@@ -109,13 +149,15 @@
 
     </div>
 
+    <!-- Pied de page -->
     <footer>
         <div class="footer-item">
             <div class="footer-icon">✉️</div>
             <p>E-mail</p>
-            <a href="mailto:luca2901bdr@gmail.com">luca2901bdr@gmail.com</a>
+            <a href="mailto:luca2904bdn@gmail.com">luca2904bdn@gmail.com</a>
         </div>
         <div class="footer-item">
+            <div class="footer-icon">👍</div>
             <p>Réseaux sociaux</p>
             <a href="#">Suivez-nous</a>
         </div>
